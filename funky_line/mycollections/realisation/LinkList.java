@@ -103,13 +103,11 @@ public class LinkList<T> implements Ilist {
         Node pointer = firstNode;
         boolean result = false;
         if (pointer != null) {
-            for (int i = 0; i <size(); i++) {
-                if (get(i) == o);
+            for (int i = 0; i < size(); i++) {
+                if (get(i) == o) ;
                 return true;
             }
-                }
-
-
+        }
         return result;
     }
 

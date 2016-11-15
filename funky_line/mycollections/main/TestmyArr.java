@@ -11,23 +11,26 @@ public class TestmyArr {
         test.add("Ноль");
         test.add(1, "Один");
         System.out.println(test.size());
-        for (int i = 0; i <test.size(); i++) {
+        for (int i = 0; i < test.size(); i++) {
             System.out.println(test.get(i));
         }
         System.out.println(test.size());
-        for (int i = 0; i <33 ; i++) {
+        for (int i = 0; i < 33; i++) {
             test.add("ddd");
         }
         System.out.println(test.size());
         test.remove(20);
         System.out.println(test.size());
 
-        for (int i = 0; i <test.size() ; i++) {
+        for (int i = 0; i < test.size(); i++) {
             System.out.println(test.get(i));
 
         }
         System.out.println(test);
         System.out.println(test.get(22));
         System.out.println(test.contains("Ноль"));
+        test.clear();
+        //      System.out.println(test.get(3));
+        System.out.println(test.isEmpty());
     }
 }
