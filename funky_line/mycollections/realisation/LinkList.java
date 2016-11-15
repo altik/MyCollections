@@ -5,6 +5,7 @@ import com.funky_line.mycollections.myinterface.Ilist;
 /**
  * Created by Rudniev Oleksandr on 14.11.2016.
  */
+
 public class LinkList<T> implements Ilist {
 
     private class Node {
@@ -101,14 +102,14 @@ public class LinkList<T> implements Ilist {
     public boolean contains(Object o) {
         Node pointer = firstNode;
         boolean result = false;
-        if (pointer == null) {
-            while (pointer.next != null) {
-                if (pointer.value.equals(o)) {
-                    result = true;
-                    break;
-                }
+        if (pointer != null) {
+            for (int i = 0; i <size(); i++) {
+                if (get(i) == o);
+                return true;
             }
-        }
+                }
+
+
         return result;
     }
 
@@ -133,11 +134,7 @@ public class LinkList<T> implements Ilist {
 
     @Override
     public void clear() {
-        for (int l = size - 1; l >= 0; l--) {
-            remove(l);
-        }
-
-
+        firstNode = null;
     }
 
     @Override
