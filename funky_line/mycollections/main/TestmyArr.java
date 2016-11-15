@@ -30,7 +30,10 @@ public class TestmyArr {
         System.out.println(test.get(22));
         System.out.println(test.contains("Ноль"));
         test.clear();
-        //      System.out.println(test.get(3));
         System.out.println(test.isEmpty());
+        System.out.println(test.size());
+        LinkList<String> aa = new LinkList<>();
+        System.out.println(aa);
+
     }
 }
